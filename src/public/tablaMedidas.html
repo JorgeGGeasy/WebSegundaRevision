@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediciones</title>
+
+  <!-- BOOTSWATCH -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css">
+
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/cssMedidas.css" />
+</head>
+
+<body class="bg-light">
+<div class="contenedor-main">
+    <h3>Media de las medidas recibidas</h3>
+    <div class="CO">
+        Media CO
+        <p id="CO_container"></p>
+    </div>
+
+    <div class="CO2">
+        Media CO2
+        <p id="CO2_container"></p>
+    </div>
+
+    <div class="O3">
+        Media O3
+        <p id="O3_container"></p>
+    </div>
+
+    <div class="Temperatura">
+        Media Temperatura
+        <p id="Temperatura_container"></p>
+    </div>
+</div>
+<div class="contenedor-main">
+    <h3>Historico</h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th class="text" scope="col">Valor</th>
+            <th class="text" scope="col">Tipo</th>
+            <th class="text" scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="contenedorTabla">
+          <tr>
+          <td class="text" id="valorMediciones"></td>
+          <td class="text" id="valorTipo"></td>
+          <td class="text" id="valorFecha"></td>
+          </tr>            
+        </tbody>
+    </table>
+</div>
+
+  <script type="module">
+    import firebase from 'firebase/app';
+    import 'firebase/firestore';
+  </script>
+
+  <!-- FIREBASE -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+  <!-- CUSTOM CODE -->
+  <script src="../db/configuracion.js"></script>
+  <script src="../logica/logica.js"></script>
+  <script src="../tablaMedidas/controladorTablaMedidas.js"></script>
+
+</body>
+
+</html>
