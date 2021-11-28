@@ -1,3 +1,8 @@
+// Nombre fichero: controladorTablaMedidas
+// Fecha: 25/11/2021
+// Autor: Jorge Grau Giannakakis
+// Descripción: El controlador se encarga de ejecutar las funciones de la logica necesarias para la aplicación
+
 // Identificamos los elementos en la pagina html
 const COContainer = document.getElementById("CO_container");
 const CO2Container = document.getElementById("CO2_container");

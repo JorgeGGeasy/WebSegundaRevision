@@ -1,3 +1,8 @@
+// Nombre fichero: congiguracion
+// Fecha: 25/11/2021
+// Autor: Jorge Grau Giannakakis
+// Descripción: En este programa se encuentra la configuracion de firebase
+
 // Empieza configuracion
 var firebaseConfig = {
     apiKey: "AIzaSyB2HQeMNFQTa58-IRRc3z64nsCqt-CAK84",

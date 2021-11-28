@@ -1,3 +1,8 @@
+// Nombre fichero: logica
+// Fecha: 25/11/2021
+// Autor: Jorge Grau Giannakakis
+// Descripción: Este programa contiene la logica de la aplicacion
+
 // Inicializamos la base de datos
 const database = firebase.firestore();
 
@@ -116,5 +121,3 @@ function insertarMedia(container, array){
         container.innerHTML = `<div class="card card-body mt-2 border-primary">${text}</div>`;
     }
 }
-
-
